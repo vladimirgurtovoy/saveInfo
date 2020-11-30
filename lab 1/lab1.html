@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Шифр цезаря и Виженера</title>
+		<style>
+			#CodeString,
+			#CodeStringV {
+				width: 500px;
+			}
+			form {
+				border: 1px solid black;
+				padding: 10px;
+				width: 520px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<h2>Шифр Цезаря</h2>
+			<div>
+				<input
+					type="text"
+					id="CodeString"
+					placeholder="Строка для шифрования/дешифровки"
+				/>
+			</div>
+			<div>
+				<input type="radio" id="encrypt" name="crypt" value="encrypt" checked />
+				<label for="encrypt">Зашифровать</label>
+				<input type="radio" id="decrypt" name="crypt" value="decrypt" />
+				<label for="decrypt">Расшифровать</label>
+				<div>
+					<input type="number" name="" id="shift" placeholder="Сдвиг" />
+					<button id="caesarBtn">OK</button>
+				</div>
+				<h3 id="caes">Результат</h3>
+			</div>
+		</form>
+		<br />
+		<form>
+			<h2>Шифр Виженера</h2>
+			<div>
+				<input
+					type="text"
+					id="CodeStringV"
+					placeholder="Строка для шифрования/дешифровки"
+				/>
+			</div>
+			<div>
+				<input
+					type="radio"
+					id="encrypt"
+					name="cryptV"
+					value="encrypt"
+					checked
+				/>
+				<label for="encrypt">Зашифровать</label>
+				<input type="radio" id="decrypt" name="cryptV" value="decrypt" />
+				<label for="decrypt">Расшифровать</label>
+				<div>
+					<input
+						type="text"
+						name=""
+						id="keyWord"
+						placeholder="Ключевое слово"
+					/>
+					<button id="vizhBtn">OK</button>
+				</div>
+				<h3 id="vig">Результат</h3>
+			</div>
+		</form>
+		<script src="./lab1.js"></script>
+	</body>
+</html>
